@@ -10,6 +10,7 @@ public class MyClass {
 	
 	public static void MyMethod() {
 	System.out.println("In my method..");
+	System.out.println("abc");
 	}
 
 }
