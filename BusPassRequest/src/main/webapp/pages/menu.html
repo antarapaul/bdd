@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Menu</title>
+<style>
+body {
+	font-family: fantasy;
+	
+}
+a{
+	text-decoration: none;
+	width: 200px;
+	height: 100px;
+	background-color: white;
+	text-decoration: underline;
+}
+li{
+	
+	width: 200px;
+	height: 60px;
+	background-color: lightgrey;
+	text-align: center;
+	line-height: 90px;
+}
+
+/* #sas {
+	display: inline-block;
+	flex-direction: column;
+} */
+
+/* .anchor {
+
+	border: thick;
+	width: 200px;
+	height: 60px;
+	padding: 10px;
+	
+}  */
+#container{
+	height: 160px;
+	width: 100px;
+	/* float: left; */
+	flex-direction: column;
+	float:none;
+	
+	
+}
+#myframe{
+	align-items:center;
+	height: 400px;
+	width: 850px;
+	background-color:lightblue;
+	float: right;
+	margin-left: 90px;
+}
+a{
+	width: 200px;
+	height: 60px;
+	
+	
+}
+
+</style>
+</head>
+<body>
+	<form name="f1">
+		<h1 align="center">Bus Portal</h1>
+		<hr>
+		
+
+	
+			
+			
+			<ul>
+				<li><a href="../Pending" target="myiframe">Pending</a></li>
+				<li><a href="newroute.html" target="myiframe">Add route</a></li>
+				<li><a href="../ListAllRoutes"target="myiframe">List All Routes</a></li>
+				<li><a href="monthlyreport.html"target="myiframe">Monthly Report</a></li>
+				<li><a href="../index.html">Logout</a></li>
+			</ul>
+			
+	
+		
+		<iframe id="myframe" name="myiframe" style="border:2px solid blue;"> </iframe>
+		
+	</form>
+</body>
+</html>

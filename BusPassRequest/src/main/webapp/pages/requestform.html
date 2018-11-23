@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Booking Page</title>
+
+
+<script type="text/javascript" src="script/validator.js"></script>
+</head>
+<body >
+	<h2 align="center">Bus Pass Form</h2>
+	<hr>
+	<form name="reqform" action="../PassRequestServlet" method="post" onsubmit="return validatesemployee()">
+		<table align="center">
+		
+		<tr>
+			<td>Employee Id:</td><td><input type="text" name="empid"></td>
+		</tr>
+		<tr>
+			<td>First Name:</td><td><input type="text" name="fname"></td>
+		</tr>
+		<tr>
+			<td>Last Name:</td><td><input type="text" name="lname"></td>
+		</tr>
+		<tr>
+			<td>Email Id:</td><td><input type="text" name="emailid"></td>
+		</tr>
+		<tr>
+			<td>Gender:</td><td><input type="radio" name="gender" value="male">male <input type="radio" name="gender" value="female">female</td>
+		</tr>
+		<tr>
+		<td>Designation :</td><td><select name="designation">
+		<option value="Software Engineer">Software Engineer</option>
+		<option value=" Senior Software Engineer">Senior Software Engineer</option>
+		<option value="Associate Consultant">Associate Consultant</option>
+		<option value="Senior Consultant">Senior Consultant</option>
+		<option value="Manager">Manager</option>
+		<option value="Senior Manager">Senior Manager</option>
+		</select></td>
+		</tr>
+		<tr>
+			<td>Address:</td><td><textarea rows="3" cols="4" name="address" ></textarea></td>
+		</tr>
+		<tr>
+			<td>Date Of Joining:</td><td><input type="date" name="doj"> </td>
+		</tr>
+		<tr>
+		<td>Location :</td><td><select name="location">
+		<option value="chennail-Mipl">Chennai MIPL</option>
+		<option value="chennail-SIPCOT">Chennai SIPCOT</option>
+		<option value="chennail-PCT">Chennai PCT</option>
+		</select></td>
+		</tr>
+		<tr>
+		<td>PickUp Location :</td><td><select name="pickuplocation">
+		<option value="Chengalpattu">Chengalpattu</option>
+		<option value="Paranur">Paranur</option>
+		<option value="Tambaram">Tambaram</option>
+		</select></td>
+		</tr>
+		<tr>
+			<td>Pick Up Time:</td><td><input type="time" name="pickuptime"> </td>
+		</tr>
+		
+		<tr>
+			<td></td><td><input type="submit" name="submit" value="submit"> </td>
+		</tr>
+		
+		</table>
+	
+	</form>
+</body>
+</html>

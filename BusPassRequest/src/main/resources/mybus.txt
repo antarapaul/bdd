@@ -1,0 +1,20 @@
+create database myBus;
+use myBus;
+
+create table logindetails(username varchar(50),userpassword varchar(50));
+
+insert into logindetails(username,userpassword) values ('antara','antara123');
+insert into logindetails(username,userpassword) values ('ankita','ankita123');
+insert into logindetails(username,userpassword) values ('amit','amit123');
+
+
+create table route(routeid int primary key auto_increment,routepath varchar(150),noofseats 
+int,totalseats int,busno varchar(10),drivername varchar(10),totalkm int);
+ 
+ 
+insert into route(routepath,noofseats,totalseats,busno,drivername,totalkm) values('Chengalpattu-Parnur-Tambaram',30,15,'TN-8767','Hari',50);
+ 
+create table buspassrequest(requestid int primary key auto_increment,empid varchar(8),firstname varchar(10),lastname varchar(10),gender varchar(6),address varchar(150),email varchar(15),dateofjoin date,location varchar(20),pickuploc varchar(20),pickuptime time,status varchar(10),designation varchar(20));
+
+create table transaction(transaction_id int primary key auto_increment,empid varchar(8),transaction_date date,calculatedkm int,monthlyfare int,routeid int) ;
+ 

@@ -1,0 +1,74 @@
+@charset "ISO-8859-1";
+#cnt{
+	width: 850px;
+	margin: 20px 20px 20px 20px;
+	padding:10px 10px 10px 10px;
+	border: 2px solid red;
+	box-shadow: 5px 5px 5px 5px red; 
+	height:500px;
+	display: inline-block;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+ul li{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;	
+	display: inline-block;
+}
+
+
+ul li a:link{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: white;
+}
+
+ul li a:active{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: white;
+}
+ul li a:visited{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: white;
+}
+
+ul li{
+	width: 150px;
+	height:30px;
+	padding: 15px 5px 5px 15px ;
+	background: red;
+	color:white;
+	font-size: 14px;
+	border-bottom: 2px solid white;
+	font-weight: bold;
+}
+#menu{
+	width: 150px;
+	float: left;
+}
+#myFrm{
+	width: 500px;
+	display:inline-block;
+	float:left;
+}
+iframe{
+	
+	text-decoration:none;
+	margin: 0;
+	padding: 0;
+	width:640px;
+	margin-left:50px; 
+	border: 1px solid red;
+	height: 350px;
+}

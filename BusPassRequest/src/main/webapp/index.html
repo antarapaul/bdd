@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bus Pass Registration Application</title>
+<link href="styles/myStyles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="script/validation.js"></script>
+</head>
+<body>
+<form name="f1" action="LoginServlet" method="post" onsubmit="return validate()">
+<h1 align="center">Bus Service Portal</h1>
+<!-- <hr> -->
+<div id="centerCnt">
+
+<div class="myimg">
+<a href="pages/requestform.html">
+	<img alt="Bus" src="images/mybus.jpg" width="300px"  height="300px">
+	<p>Click Here To raise Bus Pass Request</p>
+	</a>
+</div>
+
+<div id="loginForm">
+	<table >
+		<tr>
+			<th colspan="3" style="color:black; font-size: 16px;">Login Form</th>
+			
+		</tr>
+		<tr>
+			<td>UserName:</td>
+			<td><input type="text" name="Username" size="20"></td>
+			<td>
+				<div id="userErrMsg" class="errMsg"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="password" name="Password" size="20"></td>
+			<td>
+				<div id="pwdErrMsg" class="errMsg"></div>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type="submit" name="login" class="btn" value="Login">
+			</td>
+		</tr>
+	</table>
+
+</div>
+</div>
+</form>
+</body>
+</html>
